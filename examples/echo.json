@@ -1,0 +1,8 @@
+{
+  "command": "echo $arg1 $arg2 $arg3",
+  "args": {
+    "arg1": ["value1", "value2"],
+    "arg2": ["value3", "value4"],
+    "arg3": ["value5", "value6"]
+  }
+}

@@ -3,9 +3,13 @@
 Transcriber is a [Bun](https://bun.sh/) CLI for executing combinations of shell
 commands.
 
+The commands are run using [Bun Shell](https://bun.sh/docs/runtime/shell), which
+implements its own set of
+[built-in commands](https://bun.sh/docs/runtime/shell#builtin-commands).
+
 ## Example
 
-Given the following `input.json`:
+Given the following `echo.json`:
 
 ```json
 {
@@ -21,25 +25,31 @@ Given the following `input.json`:
 Do:
 
 ```plaintext
-bun run index.ts -- --input input.json   
+bun run index.ts -- --input ./examples/echo.json
+
 $ echo value1 value3 value5
 value1 value3 value5
+
 $ echo value1 value3 value6
 value1 value3 value6
+
 $ echo value1 value4 value5
 value1 value4 value5
+
 $ echo value1 value4 value6
 value1 value4 value6
+
 $ echo value2 value3 value5
 value2 value3 value5
+
 $ echo value2 value3 value6
 value2 value3 value6
+
 $ echo value2 value4 value5
 value2 value4 value5
+
 $ echo value2 value4 value6
 value2 value4 value6
 ```
 
-The commands are run using [Bun Shell](https://bun.sh/docs/runtime/shell), which
-implements its own set of
-[built-in commands](https://bun.sh/docs/runtime/shell#builtin-commands).
+More examples can be found within the **`/examples`** folder.

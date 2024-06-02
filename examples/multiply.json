@@ -1,0 +1,7 @@
+{
+  "command": "bun ./examples/multiply.js",
+  "args": {
+    "arg1": [1, 2],
+    "arg2": [7, 8]
+  }
+}
