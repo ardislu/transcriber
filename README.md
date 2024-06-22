@@ -52,4 +52,4 @@ $ echo value2 value4 value6
 value2 value4 value6
 ```
 
-More examples can be found within the **`/examples`** folder.
+More examples can be found within the [**`/examples`**](./examples) folder.
