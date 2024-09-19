@@ -10,8 +10,12 @@ const program = new Command()
     "JSON file with command and arguments to execute",
   )
   .option(
+    "--show-command",
+    "log input command",
+  )
+  .option(
     "--show-args",
-    "log input arguments along with the input command",
+    "log input arguments",
   );
 program.parse();
 const options = program.opts();
@@ -49,7 +53,9 @@ const c = Object.defineProperty([command], "raw", {
 }) as unknown as TemplateStringsArray;
 
 if (args === undefined) {
-  console.log(`\n$ ${command}`);
+  if (options.showCommand) {
+    console.log(`\n$ ${command}`);
+  }
   await $(c);
 } else {
   const runs = getCombinations(args);
@@ -58,7 +64,9 @@ if (args === undefined) {
     for (const [key, value] of Object.entries(inputArgs)) {
       input = input.replaceAll(`$${key}`, value);
     }
-    console.log(`\n$ ${input}`);
+    if (options.showCommand) {
+      console.log(`\n$ ${input}`);
+    }
     if (options.showArgs) {
       console.table(inputArgs);
       console.log("-------");

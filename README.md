@@ -27,29 +27,44 @@ Do:
 ```plaintext
 bun run index.ts -- --input ./examples/echo.json
 
+value1 value3 value5
+value1 value3 value6
+value1 value4 value5
+value1 value4 value6
+value2 value3 value5
+value2 value3 value6
+value2 value4 value5
+value2 value4 value6
+```
+
+Pass `--show-command` and/or `--show-args` to log the command and/or args specified in the input JSON:
+
+```plaintext
+bun run index.ts -- --input ./examples/echo.json --show-command --show-args
+
 $ echo value1 value3 value5
+┌──────┬────────┐
+│      │ Values │
+├──────┼────────┤
+│ arg1 │ value1 │
+│ arg2 │ value3 │
+│ arg3 │ value5 │
+└──────┴────────┘
+-------
 value1 value3 value5
 
 $ echo value1 value3 value6
+┌──────┬────────┐
+│      │ Values │
+├──────┼────────┤
+│ arg1 │ value1 │
+│ arg2 │ value3 │
+│ arg3 │ value6 │
+└──────┴────────┘
+-------
 value1 value3 value6
 
-$ echo value1 value4 value5
-value1 value4 value5
-
-$ echo value1 value4 value6
-value1 value4 value6
-
-$ echo value2 value3 value5
-value2 value3 value5
-
-$ echo value2 value3 value6
-value2 value3 value6
-
-$ echo value2 value4 value5
-value2 value4 value5
-
-$ echo value2 value4 value6
-value2 value4 value6
+[...]
 ```
 
 More examples can be found within the [**`/examples`**](./examples) folder.
