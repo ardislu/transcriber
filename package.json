@@ -4,10 +4,10 @@
   "module": "index.ts",
   "dependencies": {
     "@commander-js/extra-typings": "12.1.0",
-    "bun": "1.1.30",
+    "bun": "1.1.36",
     "commander": "12.1.0"
   },
   "devDependencies": {
-    "@types/bun": "1.1.10"
+    "@types/bun": "1.1.13"
   }
 }
