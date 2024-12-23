@@ -68,3 +68,25 @@ value1 value3 value6
 ```
 
 More examples can be found within the [**`/examples`**](./examples) folder.
+
+## CLI
+
+Use [`bun build`](https://bun.sh/docs/bundler/executables) to generate a portable executable:
+
+```plaintext
+bun build ./index.ts --compile --outfile transcriber
+```
+
+Usage:
+
+```plaintext
+./transcriber --input ./examples/echo.json
+```
+
+## Logging
+
+Pipe `stdout` to a text file to record outputs:
+
+```plaintext
+./transcriber --input ./examples/echo.json > ./output.txt
+```
