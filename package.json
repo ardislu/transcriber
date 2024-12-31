@@ -3,9 +3,9 @@
   "type": "module",
   "module": "index.ts",
   "dependencies": {
-    "@commander-js/extra-typings": "12.1.0",
+    "@commander-js/extra-typings": "13.0.0",
     "bun": "1.1.42",
-    "commander": "12.1.0"
+    "commander": "13.0.0"
   },
   "devDependencies": {
     "@types/bun": "1.1.14"
