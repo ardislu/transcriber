@@ -3,11 +3,11 @@
   "type": "module",
   "module": "index.ts",
   "dependencies": {
-    "@commander-js/extra-typings": "13.0.0",
-    "bun": "1.2.0",
+    "@commander-js/extra-typings": "13.1.0",
+    "bun": "1.2.2",
     "commander": "13.1.0"
   },
   "devDependencies": {
-    "@types/bun": "1.2.0"
+    "@types/bun": "1.2.2"
   }
 }
