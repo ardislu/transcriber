@@ -1,5 +1,6 @@
 {
   "name": "transcriber",
+  "license": "MIT",
   "type": "module",
   "module": "index.ts",
   "dependencies": {
