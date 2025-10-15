@@ -7,6 +7,8 @@ The commands are run using [Bun Shell](https://bun.sh/docs/runtime/shell), which
 implements its own set of
 [built-in commands](https://bun.sh/docs/runtime/shell#builtin-commands).
 
+Code repository mirrors: [GitHub](https://github.com/ardislu/transcriber), [Codeberg](https://codeberg.org/ardislu/transcriber), [git.ardis.lu](https://git.ardis.lu/transcriber)
+
 ## Example
 
 Given the following `echo.json`:
